@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f5b">
+  <title>FitLife - Fitness & Healthy Living</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn back-btn hidden" id="backBtn" aria-label="Go back">‹</button>
+      <div class="brand-mini"><span class="brand-mark">✿</span><span id="topTitle">FitLife</span></div>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+    </header>
+
+    <main id="screenHost" class="screen-host" tabindex="-1"></main>
+
+    <nav class="bottom-nav" id="bottomNav" aria-label="Main navigation">
+      <button class="nav-item active" data-screen="home"><span>⌂</span><small>Home</small></button>
+      <button class="nav-item" data-screen="diet"><span>♧</span><small>Diet</small></button>
+      <button class="nav-item" data-screen="fitness"><span>✚</span><small>Fitness</small></button>
+      <button class="nav-item" data-screen="progress"><span>▥</span><small>Progress</small></button>
+      <button class="nav-item" data-screen="profile"><span>●</span><small>Profile</small></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
